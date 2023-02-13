@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 80px;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  gap: 20px;
+}
+
+.redes img {
+  width: 30px;
+  transition: 0.1s;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+}
+
+.footer h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 650px) {
+  .footer h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .redes img {
+    width: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

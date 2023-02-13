@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Bebas Neue", cursive;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Color Theme Swatches in Hex */
+.Nadační-fond-NF-2091-1-hex {
+  color: #0df205;
+}
+.Nadační-fond-NF-2091-2-hex {
+  color: #0abf04;
+}
+.Nadační-fond-NF-2091-3-hex {
+  color: #078c03;
+}
+.Nadační-fond-NF-2091-4-hex {
+  color: #f2f2f2;
+}
+.Nadační-fond-NF-2091-5-hex {
+  color: #0d0d0d;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/logo2.png" type="image/x-icon" />
+  <title>NOWAR</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></a>
+    <nav class="header-menu">
+      <button class="button-menu" data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu" class="list-menu">
+        <li class="link-principal"><a href="">Baixar</a></li>
+        <li data-dropdown class="link-principal">
+          <a href="">Forum</a>
+          <ul id="dropdown-menu" class="dropdown-menu">
+            <li><a href="">Dúvidas Frequentes</a></li>
+            <li><a href="">Comunidade</a></li>
+            <li><a href="">Dicas</a></li>
+            <li><a href="">Ranking de Jogadores</a></li>
+          </ul>
+        </li>
+        <li class="link-principal"><a class="login" href="">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section data-intro="intro" class="intro">
+    <div class="container-intro">
+      <div class="descricao">
+        <h1>Regista-te já e sê o primeiro a jogar</h1>
+        <p>Faz já o pré-registo e ganha recompensas se os marcos globais forem atingidos. </p>
+        <h3 class="promo">Aproveite a promoção por tempo limitado</h3>
+        <span class="contagem-conteudo"></span>
+      </div>
+      <div class="links">
+        <a class="botao comprar" href="">Registrar</a>
+        <a class="botao saiba-mais" href="./saibamais.html">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section data-galeria="galeria" class="galeria">
+    <h1>gameplay avançada</h1>
+    <div class="imagens">
+      <img src="./img/galeria/gameplay/1.jpg" alt="">
+      <img src="./img/galeria/gameplay/2.jpg" alt="">
+      <img src="./img/galeria/gameplay/3.jpg" alt="">
+      <img src="./img/galeria/gameplay/4.jpg" alt="">
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <h1 class="titulo-footer">developed by Erinaldo Junior</h1>
+    <div class="redes">
+      <a href="https://www.instagram.com/eri.frontend/" target="_blank"><img src="./img/redes/instagram.png" alt="logo instagram"></a>
+      <a href="https://github.com/ErinaldoJunior" target="_blank"><img src="./img/redes/github.png" alt="logo github"></a>
+      <a href="https://www.linkedin.com/in/erinaldo-junior-70ab6725b/" target="_blank"><img src="./img/redes/linkedin.png" alt=""></a>
+    </div>
+  </footer>
+
+  <section class="container-modal" data-modal="container">
+    <div class="modal-login">
+      <button data-modal="fechar" class="fechar" type="button"><img src="./img/x.png" alt=""></button>
+      <form action="">
+        <label for="nome">username</label>
+        <input type="text" name="nome" id="nome">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <button data-modal="enviar" class="enviar" type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
