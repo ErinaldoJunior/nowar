@@ -28,7 +28,7 @@
 }
 
 .links a:hover {
-  background: red;
+  background: #992420;
   color: #f2f2f2;
 }
 
@@ -57,7 +57,7 @@
 
 .contagem-conteudo,
 .promo {
-  background-color: red;
+  background-color: #992420;
   padding: 10px;
   border-radius: 4px;
   color: #f2f2f2;

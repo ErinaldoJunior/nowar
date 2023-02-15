@@ -27,7 +27,7 @@ header {
 }
 
 .header-menu ul a:hover {
-  color: red;
+  color: #992420;
 }
 
 [data-menu="button"] {
@@ -55,8 +55,8 @@ header {
     display: inline-block;
     height: 3px;
     width: 20px;
-    background: red;
-    box-shadow: 0 6px red, 0 -6px red;
+    background: #992420;
+    box-shadow: 0 6px #992420, 0 -6px #992420;
     transition: transform 0.3s;
   }
 

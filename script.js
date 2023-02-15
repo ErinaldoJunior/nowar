@@ -149,3 +149,16 @@ const contagem = setInterval(() => {
     fimDaPromoção.total.seconds +
     ' s';
 }, 1000);
+
+const conteudo2 = document.querySelector('.contagem-conteudo2');
+const contagem2 = setInterval(() => {
+  conteudo2.innerText =
+    fimDaPromoção.total.days +
+    ' dias, ' +
+    fimDaPromoção.total.hours +
+    ' h, ' +
+    fimDaPromoção.total.minutes +
+    ' min, ' +
+    fimDaPromoção.total.seconds +
+    ' s';
+}, 1000);

@@ -1,0 +1,115 @@
+.buy {
+  display: grid;
+  justify-content: center;
+  padding: 40px 80px;
+  background: #211f20;
+}
+
+.buy h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 4rem;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contagem-conteudo2 {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #992420;
+}
+
+.capa {
+  width: 200px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.buy-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  border: 3px solid #992420;
+  border-radius: 2px;
+  padding: 10px;
+  align-items: center;
+}
+
+.logo-buy {
+  width: 150px;
+  margin-left: -20px;
+}
+
+.buy-conteudo {
+  display: grid;
+  place-content: start;
+  gap: 10px;
+}
+
+.descricao-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.descricao-grid p {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+}
+
+.preco {
+  background: #f2f2f2;
+  width: max-content;
+ color: #03A63C;
+ letter-spacing: 2px;
+ font-size: 1.125rem;
+ font-weight: bold;
+ padding: 2px 4px;
+}
+
+.botao-comprar {
+  font-size: 2rem;
+  background: #027333;
+  color: #f2f2f2;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 4px;
+  width: max-content;
+  transition: .3s;
+}
+
+.botao-comprar:hover {
+  background: #03A63C;
+}
+
+@media (max-width: 700px) {
+  .buy-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+   gap: 0px;
+  }
+  .buy-conteudo {
+    justify-items: center;
+    text-align: center;
+  }
+  .preco {
+    place-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .buy h1 {
+    font-size: 2rem;
+  }
+  .descricao-grid p, .contagem-conteudo2 {
+    font-size: .75rem;
+  }
+  .botao-comprar {
+    font-size: 1.5rem;
+  }
+  .buy-grid {
+    border: 2px solid #992420;
+  }
+}

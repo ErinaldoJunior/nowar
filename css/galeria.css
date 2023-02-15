@@ -2,7 +2,6 @@
   display: grid;
   justify-content: center;
   padding: 60px 80px;
-  background: black;
   background-size: cover;
   border-top: solid black;
 }
