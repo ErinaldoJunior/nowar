@@ -1,11 +1,11 @@
-const btnlogin = document.querySelector(".header-menu .login");
-const modal = document.querySelector(".container-modal");
-const fechar = document.querySelector(".fechar");
+const btnlogin = document.querySelector('.header-menu .login');
+const modal = document.querySelector('.container-modal');
+const fechar = document.querySelector('.fechar');
 
 if (btnlogin && modal && fechar) {
   function toggleModal(event) {
     event.preventDefault();
-    modal.classList.toggle("ativo");
+    modal.classList.toggle('ativo');
   }
 
   function fecharFora(event) {
@@ -15,33 +15,33 @@ if (btnlogin && modal && fechar) {
   }
 }
 
-btnlogin.addEventListener("click", toggleModal);
-fechar.addEventListener("click", toggleModal);
-modal.addEventListener("click", fecharFora);
+btnlogin.addEventListener('click', toggleModal);
+fechar.addEventListener('click', toggleModal);
+modal.addEventListener('click', fecharFora);
 
-const dropDownMenu = document.querySelectorAll("[data-dropdown]"); // menu drop do link forum
+const dropDownMenu = document.querySelectorAll('[data-dropdown]'); // menu drop do link forum
 
 dropDownMenu.forEach((menu) => {
-  menu.addEventListener("click", clicarMenu);
-  menu.addEventListener("touchstart", clicarMenu);
+  menu.addEventListener('click', clicarMenu);
+  menu.addEventListener('touchstart', clicarMenu);
 });
 
 //remover menu ao clicar fora
 
 function clicarMenu(event) {
   event.preventDefault();
-  this.classList.toggle("active");
+  this.classList.toggle('active');
   outsideClick(this, () => {
-    this.classList.remove("active");
+    this.classList.remove('active');
   });
 }
 
 function outsideClick(element, callback) {
   const html = document.documentElement;
-  html.addEventListener("click", handleOutsideClick);
+  html.addEventListener('click', handleOutsideClick);
   function handleOutsideClick(event) {
     if (!element.contains(event.target)) {
-      html.removeEventListener("click", handleOutsideClick);
+      html.removeEventListener('click', handleOutsideClick);
       callback();
     }
   }
@@ -49,19 +49,19 @@ function outsideClick(element, callback) {
 
 //////////////////////////////////////
 
-const menuButton = document.querySelector(".button-menu");
-const menuList = document.querySelector(".list-menu");
+const menuButton = document.querySelector('.button-menu');
+const menuList = document.querySelector('.list-menu');
 
 function openMenu(event) {
-  menuList.classList.toggle("aparecer");
-  menuButton.classList.toggle("aparecer");
+  menuList.classList.toggle('aparecer');
+  menuButton.classList.toggle('aparecer');
 }
 
-menuButton.addEventListener("click", openMenu);
+menuButton.addEventListener('click', openMenu);
 
 ///////////////////////////////////
 
-const links = document.querySelectorAll(".links a");
+const links = document.querySelectorAll('.links a');
 
 function clicarLinkIntro(event) {
   event.preventDefault();
@@ -76,22 +76,22 @@ async function fetchPage(url) {
 }
 
 function replaceContent(novoTexto) {
-  const newHtml = document.createElement("div");
+  const newHtml = document.createElement('div');
   newHtml.innerHTML = novoTexto;
 
-  const oldContent = document.querySelector(".intro");
-  const newContent = newHtml.querySelector(".intro");
+  const oldContent = document.querySelector('.intro');
+  const newContent = newHtml.querySelector('.intro');
 
   oldContent.innerHTML = newContent.innerHTML;
-  document.title = newHtml.querySelector("title").innerText;
+  document.title = newHtml.querySelector('title').innerText;
 }
 
-window.addEventListener("popstate", function () {
+window.addEventListener('popstate', function () {
   fetchPage(window.location.href);
 });
 
 links.forEach((link) => {
-  link.addEventListener("click", clicarLinkIntro);
+  link.addEventListener('click', clicarLinkIntro);
 });
 
 //////////////////////////////////////// CONTAGEM
@@ -135,17 +135,17 @@ class Countdown {
   }
 }
 
-const fimDaPromoção = new Countdown("30 July 2023 23:59:59 GMT-0300");
+const fimDaPromoção = new Countdown('30 July 2023 23:59:59 GMT-0300');
 
-const conteudo = document.querySelector(".contagem-conteudo");
+const conteudo = document.querySelector('.contagem-conteudo');
 const contagem = setInterval(() => {
   conteudo.innerText =
     fimDaPromoção.total.days +
-    " dias, " +
+    ' dias, ' +
     fimDaPromoção.total.hours +
-    " h, " +
+    ' h, ' +
     fimDaPromoção.total.minutes +
-    " min, " +
+    ' min, ' +
     fimDaPromoção.total.seconds +
-    " s";
+    ' s';
 }, 1000);

@@ -4,15 +4,16 @@
   z-index: 200;
   top: 72px;
   right: 35px;
-  background: #f2f2f2;
+  background: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px;
   display: none;
-  border: 3px solid red;
+  border: 3px solid #f2f2f2;
 }
 
 .dropdown-menu li a {
-  color: black;
+  color: #f2f2f2;
+  border-bottom: 2px solid red;
 }
 
 .dropdown-menu li {
@@ -46,4 +47,25 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+@media (max-width: 700px) {
+  .dropdown-menu li a {
+    color: black;
+    font-size: .75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+      }
+  .header-menu .dropdown-menu {
+    background: #f2f2f2;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .delete-jogadores {
+    display: none;
+  }
+
 }
