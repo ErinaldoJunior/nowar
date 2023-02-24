@@ -10,6 +10,7 @@
 .container-intro {
   display: grid;
   gap: 60px;
+  margin: 0 auto;
 }
 
 .links {
