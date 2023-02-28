@@ -162,3 +162,16 @@ const contagem2 = setInterval(() => {
     fimDaPromoção.total.seconds +
     ' s';
 }, 1000);
+
+const conteudo3 = document.querySelector('.contagem-conteudo3');
+const contagem3 = setInterval(() => {
+  conteudo3.innerText =
+    fimDaPromoção.total.days +
+    ' dias, ' +
+    fimDaPromoção.total.hours +
+    ' h, ' +
+    fimDaPromoção.total.minutes +
+    ' min, ' +
+    fimDaPromoção.total.seconds +
+    ' s';
+}, 1000);

@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.contagem-conteudo2 {
+.contagem-conteudo2,.contagem-conteudo3 {
   font-family: 'IBM Plex Mono', monospace;
   color: #992420;
 }
@@ -26,7 +26,33 @@
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
+
+.buy-grid::before {
+  content: "- 50% Deluxe Edition";
+  width: max-content;
+  height: 20px;
+  background:red;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 93px;
+  padding: 2px 4px;
+}
+
+.buy-grid2::before {
+  content: "- 50%";
+  width: max-content;
+  height: 20px;
+  background:red;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 172px;
+  padding: 2px 4px;
+}
+
 
 .buy-grid {
   display: grid;
@@ -36,10 +62,11 @@
   border-radius: 2px;
   padding: 10px;
   align-items: center;
+  position: relative;
 }
 
 .logo-buy {
-  width: 150px;
+  width: 100px;
   margin-left: -20px;
 }
 
@@ -68,9 +95,12 @@
  font-weight: bold;
  padding: 2px 4px;
 }
-
+.preco-antigo {
+  font-family: 'IBM Plex Mono', monospace;
+  text-decoration: line-through;
+}
 .botao-comprar {
-  font-size: 2rem;
+  font-size: 1.75rem;
   background: #027333;
   color: #f2f2f2;
   padding: 8px 16px;
@@ -82,6 +112,13 @@
 
 .botao-comprar:hover {
   background: #03A63C;
+}
+
+.grid-produtos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (max-width: 700px) {
